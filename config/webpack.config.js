@@ -26,7 +26,7 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
-							importLoaders: 1,
+							importLoaders: 2,
 							modules: {
 								mode: (resourcePath) => {
 									if(/global.css$/.test(resourcePath)) {
@@ -41,6 +41,9 @@ module.exports = {
 					},
 					{
 						loader: 'less-loader'
+					},
+					{
+						loader: 'postcss-loader'
 					}
 				]
 			},
