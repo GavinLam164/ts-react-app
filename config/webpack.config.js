@@ -13,11 +13,12 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, '../dist'),
 		filename: 'bundler.js',
+		publicPath: '/'
 	},
 	module: {
 		rules: [
 			{
-				test: /\.css$/,
+				test: /\.less$/,
 				use: [
 					{
 						loader: 'style-loader'
@@ -25,6 +26,7 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							importLoaders: 1,
 							modules: {
 								mode: (resourcePath) => {
 									if(/global.css$/.test(resourcePath)) {
@@ -36,6 +38,9 @@ module.exports = {
 								exportLocalsConvention: 'camelCase',
 							}
 						}
+					},
+					{
+						loader: 'less-loader'
 					}
 				]
 			},

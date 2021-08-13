@@ -2,6 +2,6 @@
 
 export const Detail = () => {
 	return <div>
-		Detail
+		detail12345678910
 	</div>
 }
