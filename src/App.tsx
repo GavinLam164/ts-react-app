@@ -1,17 +1,10 @@
 
 import { hot } from 'react-hot-loader/root';
-import styles from './App.css'
+import { Router } from './routes/Router';
 
-interface AppProps {
-	name: string
+
+export const App: React.FC = () => {
+	return <Router />
 }
-
-export const App: React.FC<AppProps> = ({ name }) => {
-	console.log(styles)
-	return <div className={styles.appDemo}>
-		{name}
-	</div>
-}
-
 
 export const HotApp = hot(App);
