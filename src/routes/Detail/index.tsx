@@ -1,5 +1,5 @@
 export const Detail = () => (
   <div>
-    detail12345678910
+    detail1234567891012312312312
   </div>
 );
