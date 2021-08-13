@@ -49,7 +49,10 @@ module.exports = {
 			},
 			{
 				test: /\.tsx?$/,
-				loader: 'babel-loader'
+				exclude: /node_modules/,
+				use: [
+					'babel-loader'
+				]
 			}
 		]
 	},
