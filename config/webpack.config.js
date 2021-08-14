@@ -51,7 +51,8 @@ module.exports = {
 				test: /\.tsx?$/,
 				exclude: /node_modules/,
 				use: [
-					'babel-loader'
+					'babel-loader',
+					'eslint-loader'
 				]
 			}
 		]

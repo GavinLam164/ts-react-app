@@ -5,7 +5,7 @@ import {
 import { routeConfig } from './config'
 import { Link } from 'react-router-dom'
 
-export const Router = () => {
+export const Router: React.FC = () => {
 	return <BrowserRouter>
 		<Link to={'/preview'}>
 			preview

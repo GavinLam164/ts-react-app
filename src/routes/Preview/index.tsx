@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom'
 import styles from './styles.less'
 
-export const Preview = () => (
+export const Preview: React.FC = () => (
   <div className={styles.wrapper}>
-		preview
+		preview11112222
   </div>
 )
