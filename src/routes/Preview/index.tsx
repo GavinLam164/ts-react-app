@@ -1,15 +1,8 @@
-import styles from './styles.less';
+import { Link } from 'react-router-dom'
+import styles from './styles.less'
 
 export const Preview = () => (
   <div className={styles.wrapper}>
-    <div>
-      1
-    </div>
-    <div>
-      2
-    </div>
-    <div>
-      3
-    </div>
+		preview
   </div>
-);
+)

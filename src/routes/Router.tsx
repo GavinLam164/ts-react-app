@@ -3,9 +3,13 @@ import {
   BrowserRouter, Route
 } from 'react-router-dom'
 import { routeConfig } from './config'
+import { Link } from 'react-router-dom'
 
 export const Router = () => {
 	return <BrowserRouter>
+		<Link to={'/preview'}>
+			preview
+		</Link>
 		{
 			routeConfig.map(
 				({ path, component, exact }) =>
