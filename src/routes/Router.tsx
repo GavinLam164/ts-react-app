@@ -1,6 +1,5 @@
-
 import {
-  BrowserRouter, Route
+	BrowserRouter, Route,
 } from 'react-router-dom'
 import { routeConfig } from './config'
 import { Link } from 'react-router-dom'

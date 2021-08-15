@@ -5,10 +5,10 @@ import { Preview } from './Preview/index'
 export const routeConfig: Array<RouteProps> = [
 	{
 		path: '/preview',
-		component: Preview
+		component: Preview,
 	},
 	{
 		path: '/detail',
-		component: Detail
-	}
+		component: Detail,
+	},
 ]
