@@ -31,7 +31,8 @@ module.exports = {
 		"import/prefer-default-export": 0,
 		"react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
 		"react/jsx-indent" : [2, 'tab'],
-		"react/jsx-indent-props" : [2, 'tab']
+		"react/jsx-indent-props" : [2, 'tab'],
+		"jsx-quotes": [2, "prefer-single"]
 	},
 	"settings": {
 		"import/resolver": {

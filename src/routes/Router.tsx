@@ -5,7 +5,7 @@ import { routeConfig } from './config'
 
 export const Router: React.FC = () => (
 	<BrowserRouter>
-		<Link to="/preview">
+		<Link to='/preview'>
 			preview
 		</Link>
 		{
