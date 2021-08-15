@@ -29,7 +29,7 @@ module.exports = {
 							importLoaders: 2,
 							modules: {
 								mode: (resourcePath) => {
-									if(/global.css$/.test(resourcePath)) {
+									if(/global\.less$/.test(resourcePath) || /antd\.less$/.test(resourcePath)) {
 										return 'global'
 									}
 									return 'local'
@@ -40,7 +40,12 @@ module.exports = {
 						}
 					},
 					{
-						loader: 'less-loader'
+						loader: 'less-loader',
+						options: {
+							lessOptions: {
+								javascriptEnabled: true
+							}
+						}
 					},
 					{
 						loader: 'postcss-loader'

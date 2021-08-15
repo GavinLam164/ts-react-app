@@ -1,13 +1,12 @@
 import {
-	BrowserRouter, Route, Link,
+	BrowserRouter, Route,
 } from 'react-router-dom'
+import { Button } from 'antd'
 import { routeConfig } from './config'
 
 export const Router: React.FC = () => (
 	<BrowserRouter>
-		<Link to='/preview'>
-			preview
-		</Link>
+		<Button>asdfasdfds</Button>
 		{
 			routeConfig.map(({ path, component, exact }) => (
 				<Route

@@ -80,8 +80,10 @@
 		"noUnusedLocals": true,
 		"allowSyntheticDefaultImports": true,
 		"baseUrl": ".",
+		"moduleResolution": "node",
 		"paths": {
-			"react/jsx-runtime": ["node_modules/reawct/jsx-dev-runtime"]
+			"react/jsx-runtime": ["node_modules/react/jsx-dev-runtime"],
+			// "antd": ["node_modules/ant/es"],
 		}
 	},
 	"include": [
