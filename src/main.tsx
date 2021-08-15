@@ -3,6 +3,6 @@ import { HotApp } from './App';
 import './global.less';
 
 render(
-  <HotApp />,
-  document.getElementById('app'),
+	<HotApp />,
+	document.getElementById('app'),
 );
