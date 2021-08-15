@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node scripts/dev.js"
+    "dev": "node scripts/dev.js",
+		"analyze": "webpack --config ./config/speed-masure.config.js"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@hot-loader/react-dom": "^17.0.1",
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
+    "@types/react-router": "^5.1.16",
     "@types/react-router-dom": "^5.1.8",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
@@ -42,6 +44,7 @@
     "less-loader": "^10.0.1",
     "postcss-loader": "^6.1.1",
     "react-hot-loader": "^4.13.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
     "style-loader": "^3.2.1",
     "typescript": "^4.3.5",
     "webpack": "^5.50.0",
