@@ -9,7 +9,10 @@
 		"sourceMap": true,
 		"noUnusedLocals": true,
 		"allowSyntheticDefaultImports": true,
-		"baseUrl": "."
+		"baseUrl": ".",
+		"paths": {
+			"react/jsx-runtime": ["node_modules/reawct/jsx-dev-runtime"]
+		}
 	},
 	"include": [
 		"src/**/*"
