@@ -8,7 +8,7 @@ module.exports = {
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
 		"airbnb",
-		"plugin:prettier/recommended"
+		"plugin:prettier/recommended",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -29,7 +29,8 @@ module.exports = {
 		"react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
 		"react/jsx-indent" : [2, 'tab'],
 		"react/jsx-indent-props" : [2, 'tab'],
-		"jsx-quotes": [2, "prefer-single"]
+		"jsx-quotes": [2, "prefer-single"],
+		"react/prop-types": 0
 	},
 	"settings": {
 		"import/resolver": {

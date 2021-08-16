@@ -83,6 +83,7 @@
 		"moduleResolution": "node",
 		"paths": {
 			"react/jsx-runtime": ["node_modules/react/jsx-dev-runtime"],
+			"@components/*": ["src/components/*"]
 			// "antd": ["node_modules/ant/es"],
 		}
 	},

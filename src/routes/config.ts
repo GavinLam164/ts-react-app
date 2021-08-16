@@ -1,19 +1,21 @@
-import { RouteProps } from 'react-router'
-import { Detail } from './Detail/index'
-import { Preview } from './Preview/index'
-import { List } from './List/index'
+import { RouteConfig } from 'react-router-config'
+import { AppLayout } from '@components/Layout'
+import { Login } from './Login'
+import { Preview } from './Preview'
 
-export const routeConfig: Array<RouteProps> = [
+export const routeConfig: Array<RouteConfig> = [
 	{
-		path: '/preview',
-		component: Preview,
+		path: '/login',
+		component: Login,
 	},
 	{
-		path: '/detail',
-		component: Detail,
-	},
-	{
-		path: '/list',
-		component: List,
+		path: '/layout',
+		component: AppLayout,
+		routes: [
+			{
+				path: '/layout/preview',
+				component: Preview,
+			},
+		],
 	},
 ]
