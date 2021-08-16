@@ -1,5 +1,1 @@
-export const List: React.FC = () => (
-	<div>
-		list
-	</div>
-)
+export const List: React.FC = () => <div>list</div>

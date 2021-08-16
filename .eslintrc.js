@@ -7,7 +7,8 @@ module.exports = {
 		"eslint:recommended",
 		"plugin:react/recommended",
 		"plugin:@typescript-eslint/recommended",
-		"airbnb"
+		"airbnb",
+		"plugin:prettier/recommended"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -17,10 +18,6 @@ module.exports = {
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": [
-		"react",
-		"@typescript-eslint"
-	],
 	"rules": {
 		"react/react-in-jsx-scope": 0,
 		"react/jsx-uses-react": 0,
